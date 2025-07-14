@@ -260,7 +260,7 @@ main,
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: white;
+background-color: white;
   transition: width 0.5s ease;
 }
 
@@ -271,87 +271,49 @@ main,
 
 /* REDE-SOCIAIS-CONFIG */
 .social-icons {
-  position: fixed;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
+ position: absolute;  /* ou fixed, dependendo do layout */
+  right: 20px;         /* ajuste a posição */
+  top: 50%;            /* centraliza na altura */
+  transform: translateY(-50%); /* centraliza certinho */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px;           /* espaçamento entre ícones */
 
 }
 
-.social-icons a {
+.social-icons a i {
   color: white;
   font-size: 24px;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #23461b;
-  /* efeito ao passar o mouse */
+.social-icons a i:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: #23461b; /* mesma cor do hover do topo */
 }
 
+/* ICONS TOPO CONFIG */
 
 .icones-topo-direito {
   position: absolute;
-  top: 30px;
-  right: 40px;
-  display: flex;
-  gap: 25px;
-  z-index: 10;
+  top: 20px;
+  right: 10.2px;
+     /* Ou o valor que quiser */
+  z-index: 999;  /* Garante que fica na frente de tudo */
 }
 
 .icones-topo-direito i {
   color: white;
   font-size: 20px;
   cursor: pointer;
+  margin-left: 15px;  /* espaçamento entre ícones */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icones-topo-direito i:hover {
   transform: scale(1.3) rotate(5deg);
   color: #23461b;
-}
-
-.campo-busca {
-  position: absolute;
-  top: 70px;
-  right: 40px;
-  display: none;
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  z-index: 11;
-   
-}
-
-.campo-busca input {
-  padding: 5px 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-}
-
-.campo-busca button {
-  margin-left: 8px;
-  padding: 6px 12px;
-  font-size: 14px;
-  background-color: #23461b;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-}
-
-.campo-busca button:hover {
-  background-color: #23461b;
-
-  
 }
 
 

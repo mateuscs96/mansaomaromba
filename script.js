@@ -1,6 +1,6 @@
 // Alternar campo de busca
 document.getElementById("icone-busca").addEventListener("click", () => {
-  const campo = document.getElementById("campoBusca");
+  const campo = document.getElementById("icone-busca");
   campo.style.display = campo.style.display === "flex" ? "none" : "flex";
   campo.style.flexDirection = "row";
 });
