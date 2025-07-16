@@ -14,29 +14,31 @@ main,
 }
 
 .logo {
-  width: 12px;
-  /* define o tamanho desejado */
-  height: 10px;
-  /* mantém a proporção */
+  width: 12px; /* define o tamanho desejado */
+  height: 10px; /* mantém a proporção */
   margin-top: 15px;
   margin-left: 15px;
   display: inline-block
 }
 
 
+
+
+.bloco-titulo {
+  position: relative;  /* Container relativo */
+  width: fit-content;  /* Só o tamanho do conteúdo */
+}
+
 .titulo {
-  display: flex;
-  align-items: center; /* alinha verticalmente */
-  gap: 10px; /* espaçamento entre texto e imagem */
+  font-size: 100px; /* Tamanho exato */
+  margin: 0;
 }
 
-.titulo h1 {
-  margin: 0; /* evita espaçamento extra */
-}
-
-.titulo .raio {
-  width: 40px;
-  /* ajuste o tamanho do raio */
+.raio {
+  position: absolute;  /* Fixa sobre o container */
+  top: 20px;           /* Ajuste Y */
+  left: 420px;         /* Ajuste X */
+  width: 60px;         /* Tamanho exato */
   height: auto;
 }
 
@@ -112,6 +114,7 @@ main,
 
 
 }
+
 
 
 
@@ -249,7 +252,7 @@ main,
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: white;
+background-color: white;
   transition: width 0.5s ease;
 }
 
@@ -260,18 +263,13 @@ main,
 
 /* REDE-SOCIAIS-CONFIG */
 .social-icons {
-  position: absolute;
-  /* ou fixed, dependendo do layout */
-  right: 20px;
-  /* ajuste a posição */
-  top: 50%;
-  /* centraliza na altura */
-  transform: translateY(-50%);
-  /* centraliza certinho */
+ position: absolute;  /* ou fixed, dependendo do layout */
+  right: 20px;         /* ajuste a posição */
+  top: 50%;            /* centraliza na altura */
+  transform: translateY(-50%); /* centraliza certinho */
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  /* espaçamento entre ícones */
+  gap: 20px;           /* espaçamento entre ícones */
 
 }
 
@@ -284,8 +282,7 @@ main,
 
 .social-icons a i:hover {
   transform: scale(1.2) rotate(5deg);
-  color: #23461b;
-  /* mesma cor do hover do topo */
+  color: #23461b; /* mesma cor do hover do topo */
 }
 
 /* ICONS TOPO CONFIG */
@@ -294,17 +291,15 @@ main,
   position: absolute;
   top: 20px;
   right: 10.2px;
-  /* Ou o valor que quiser */
-  z-index: 999;
-  /* Garante que fica na frente de tudo */
+     /* Ou o valor que quiser */
+  z-index: 999;  /* Garante que fica na frente de tudo */
 }
 
 .icones-topo-direito i {
   color: white;
   font-size: 20px;
   cursor: pointer;
-  margin-left: 15px;
-  /* espaçamento entre ícones */
+  margin-left: 15px;  /* espaçamento entre ícones */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -322,7 +317,7 @@ footer {
   color: white;
   font-family: 'Courier New', Courier, monospace;
 
-  text-align: center;
+text-align: center;
 
 
 }
