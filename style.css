@@ -116,15 +116,9 @@ main,
 
 }
 
-.raio {
-  position: absolute;
-  margin: 45px 10px 279px 248px;
-  width: 120px;
-  height: 140px;
-
-  bottom: 25px;
-
-
+.titulo .raio {
+  width: 40px; /* ajuste o tamanho do raio */
+  height: auto;
 }
 
 
