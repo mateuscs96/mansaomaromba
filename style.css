@@ -18,6 +18,7 @@ main,
   height: 10px; /* mantém a proporção */
   margin-top: 15px;
   margin-left: 15px;
+  display: inline-block
 }
 
 
