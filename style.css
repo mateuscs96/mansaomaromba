@@ -24,13 +24,8 @@ main,
 
 
 
-.bloco-titulo {
-  position: relative;  /* Container relativo */
-  width: fit-content;  /* Só o tamanho do conteúdo */
-}
 
 .titulo {
-
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 64px;
@@ -38,7 +33,7 @@ main,
   text-transform: uppercase;
   background: linear-gradient(to bottom, #ffffff, #d0d0d0);
   -webkit-background-clip: text;
-  color: transparent;
+   color: transparent;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-top: 90px;
@@ -47,14 +42,6 @@ main,
 
 }
 
-
-.raio {
-  position: absolute;  /* Fixa sobre o container */
-  top: 20px;           /* Ajuste Y */
-  left: 420px;         /* Ajuste X */
-  width: 60px;         /* Tamanho exato */
-  height: auto;
-}
 
 
 
@@ -129,7 +116,16 @@ main,
 
 }
 
+.raio {
+  position: absolute;
+  flex: auto;
+  margin: 45px 10px 279px 248px;
+  width: 120px;
+  height: 140px;
+  bottom: 25px;
 
+
+}
 
 
 /* Produto-Garrafa */
