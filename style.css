@@ -14,34 +14,31 @@ main,
 }
 
 .logo {
-  width: 12px; /* define o tamanho desejado */
-  height: 10px; /* mantém a proporção */
+  width: 12px;
+  /* define o tamanho desejado */
+  height: 10px;
+  /* mantém a proporção */
   margin-top: 15px;
   margin-left: 15px;
   display: inline-block
 }
 
 
-
-
-
 .titulo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 1;
-  text-transform: uppercase;
-  background: linear-gradient(to bottom, #ffffff, #d0d0d0);
-  -webkit-background-clip: text;
-   color: transparent;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-top: 90px;
-  margin-left: 30px;
-
-
+  display: flex;
+  align-items: center; /* alinha verticalmente */
+  gap: 10px; /* espaçamento entre texto e imagem */
 }
 
+.titulo h1 {
+  margin: 0; /* evita espaçamento extra */
+}
+
+.titulo .raio {
+  width: 40px;
+  /* ajuste o tamanho do raio */
+  height: auto;
+}
 
 
 
@@ -116,10 +113,6 @@ main,
 
 }
 
-.titulo .raio {
-  width: 40px; /* ajuste o tamanho do raio */
-  height: auto;
-}
 
 
 /* Produto-Garrafa */
@@ -256,7 +249,7 @@ main,
   left: 0;
   width: 0%;
   height: 2px;
-background-color: white;
+  background-color: white;
   transition: width 0.5s ease;
 }
 
@@ -267,13 +260,18 @@ background-color: white;
 
 /* REDE-SOCIAIS-CONFIG */
 .social-icons {
- position: absolute;  /* ou fixed, dependendo do layout */
-  right: 20px;         /* ajuste a posição */
-  top: 50%;            /* centraliza na altura */
-  transform: translateY(-50%); /* centraliza certinho */
+  position: absolute;
+  /* ou fixed, dependendo do layout */
+  right: 20px;
+  /* ajuste a posição */
+  top: 50%;
+  /* centraliza na altura */
+  transform: translateY(-50%);
+  /* centraliza certinho */
   display: flex;
   flex-direction: column;
-  gap: 20px;           /* espaçamento entre ícones */
+  gap: 20px;
+  /* espaçamento entre ícones */
 
 }
 
@@ -286,7 +284,8 @@ background-color: white;
 
 .social-icons a i:hover {
   transform: scale(1.2) rotate(5deg);
-  color: #23461b; /* mesma cor do hover do topo */
+  color: #23461b;
+  /* mesma cor do hover do topo */
 }
 
 /* ICONS TOPO CONFIG */
@@ -295,15 +294,17 @@ background-color: white;
   position: absolute;
   top: 20px;
   right: 10.2px;
-     /* Ou o valor que quiser */
-  z-index: 999;  /* Garante que fica na frente de tudo */
+  /* Ou o valor que quiser */
+  z-index: 999;
+  /* Garante que fica na frente de tudo */
 }
 
 .icones-topo-direito i {
   color: white;
   font-size: 20px;
   cursor: pointer;
-  margin-left: 15px;  /* espaçamento entre ícones */
+  margin-left: 15px;
+  /* espaçamento entre ícones */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -321,7 +322,7 @@ footer {
   color: white;
   font-family: 'Courier New', Courier, monospace;
 
-text-align: center;
+  text-align: center;
 
 
 }
